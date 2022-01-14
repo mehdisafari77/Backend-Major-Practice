@@ -12,24 +12,36 @@
 </body>
 </html>
   <body class="container">
-    <button id="complimentButton">Get Compliment</button>
+    <div id='main-body'>
 
-    <button id="fortuneButton">Get Fortune</button>
+      <div id=top>
+        <button id="complimentButton">Get Compliment</button>
 
-    <div id='inspiration-main-container'>
-      <button id="inspiro-btn">Get Inspiration</button>
-      <p id="inspiro-container"></p>
+        <button id="fortuneButton">Get Fortune</button>
+    
+        <div id='inspiration-main-container'>
+          <button id="inspiro-btn">Get Inspiration</button>
+          <p id="inspiro-container"></p>
+        </div>
+      </div>
+
+      <div id='bottom'>
+          <form id="text-form">
+            <p>
+              How Will You Bring About Joy To Someone Today? 
+            </p>
+            <input placeholder="Write here..." type="text" id="input-text">
+            <button id='submit'>Submit</button>
+          </form>
+    
+          <div id="joy-container"></div>
+        </div>
+      </div>
+      
+  
+    <div id='footer'>
+      <p>Created with 🤍 by Mehdi Safari 🚀</p>
     </div>
-
-    <form id="text-form">
-      <p>
-        How Will You Bring About Joy To Someone Today? 
-      </p>
-      <input placeholder="Write here..." type="text" id="input-text">
-      <button id='submit'>Submit</button>
-    </form>
-
-    <div id="joy-container"></div>
 
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

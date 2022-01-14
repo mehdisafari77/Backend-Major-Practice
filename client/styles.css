@@ -1,7 +1,7 @@
+/* Main Body Styling */
 * {
     margin: 0px;
 }
-
 body {
     background-image: url('https://images.pexels.com/photos/9585846/pexels-photo-9585846.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
     background-size: cover;
@@ -9,8 +9,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100vh;
+}
+#main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 /* Button Styling */
@@ -101,6 +115,12 @@ button:hover{
 }
 
 /* Joy Container Styling */
+#joy-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 #joy-text {
     text-align: center;
     margin: 10px;
@@ -108,4 +128,17 @@ button:hover{
     background: -webkit-linear-gradient(#f1964b 0%, #d65b45 51%, #e43a1c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
