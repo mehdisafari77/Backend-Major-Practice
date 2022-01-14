@@ -80,7 +80,6 @@ button:hover{
 /* Form Styling */
 #text-form {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -102,3 +101,11 @@ button:hover{
 }
 
 /* Joy Container Styling */
+#joy-text {
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    background: -webkit-linear-gradient(#f1964b 0%, #d65b45 51%, #e43a1c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
