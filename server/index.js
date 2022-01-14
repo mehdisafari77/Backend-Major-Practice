@@ -17,3 +17,5 @@ app.post("/api/display", controller.displayText)
 app.delete("/api/display/:id", controller.deleteTask)
 
 app.listen(4000, () => console.log("Server running on 4000"));
+
+// TODO: fix heroku live link later
