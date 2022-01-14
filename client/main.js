@@ -27,11 +27,11 @@ function displayTaskList(arr){
   }
   
   for (let i = 0; i < arr.length; i++){
-    const newTask = document.createElement("div");
+    const joy = document.createElement("div");
     
-    newTask.innerHTML = `<p id=joy-text>${arr[i].text}</p><button class="delete-btn" value ="${arr[i].id}">Delete</button>`
+    joy.innerHTML = `<p id=joy-text>${arr[i].text}</p><button class="delete-btn" value ="${arr[i].id}">Delete</button>`
     
-    joyContainer.appendChild(newTask);
+    joyContainer.appendChild(joy);
     
     let deleteBtns = document.getElementsByClassName('delete-btn');
     
