@@ -3,8 +3,14 @@
 }
 
 body {
-    background-image: url('https://images.pexels.com/photos/4147343/pexels-photo-4147343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-image: url('https://images.pexels.com/photos/9585846/pexels-photo-9585846.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
     background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 /* Button Styling */
@@ -23,8 +29,8 @@ button {
     box-shadow: 0 1px 3px rgba(194, 71, 71, 0.12), 0 1px 2px rgba(46, 72, 189, 0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     cursor: pointer;
-    display: inline-block;
-    border-radius: 25px;
+    border-radius: 20px;
+    border: none;
 }
 button:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -43,15 +49,54 @@ button:hover{
     background-position: right center; 
 }
 #inspiro-btn {
-    background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%)
+    background-image: linear-gradient(to right, #7474BF 0%, #6abfe6 51%, #7474BF 100%)
 }
 #inspiro-btn:hover { 
     background-position: right center; 
 }
 #submit {
-    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%)
+    width: 80px !important;
+    background-image: linear-gradient(to right, #f2f56a 0%, #aae062 51%, #00d2ff 100%)
 }
-#submit :hover { 
-    background-position: right center; 
+.delete-btn {
+    background-image: linear-gradient(to right, #f1964b 0%, #d65b45 51%, #e43a1c 100%)
 }
 
+/* Inspiration Container Styling */
+#inspiration-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#inspiro-container {
+    font-size: 22px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(242, 243, 243), rgb(162, 126, 245));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Form Styling */
+#text-form {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#text-form p{
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 28px;
+    background: -webkit-linear-gradient(rgb(242, 243, 243), rgb(109, 231, 78));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#text-form input {
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    padding-left: 10px;
+}
