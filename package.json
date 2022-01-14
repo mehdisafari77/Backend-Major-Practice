@@ -1,25 +1,22 @@
 {
-  "name": "backend-major-practice",
-  "version": "1.0.0",
-  "description": "A full on practice of full-stack application setup and deployment",
-  "main": "index.js",
+  "homepage": "https://mehdisafari77.github.io/Backend-Major-Practice/client/index.html",
+  "name": "backend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mehdisafari77/Backend-Major-Practice.git"
+    "start": "node server/index.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mehdisafari77/Backend-Major-Practice/issues"
-  },
-  "homepage": "https://github.com/mehdisafari77/Backend-Major-Practice#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "gh-pages": "^3.2.3"
   }
 }
