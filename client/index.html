@@ -8,9 +8,16 @@
 
     <button id="fortuneButton">Get a fortune</button>
 
-    <form id="text-form">
-      What do you need to get done today? <input type="text" id="input-text">
-      <button>Submit</button>
+    <form id="select-form">
+      <label for="tasks">What will you do today?</label>
+      <select name="tasks" id="select-text">
+        <option value="walk">Go for walk</option>
+        <option value="sleep">Sleep</option>
+        <option value="work">Work</option>
+        <option value="family"> Spend Time with family</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
     </form>
 
     <div id="tasklist-container"></div>
