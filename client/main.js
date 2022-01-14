@@ -1,6 +1,8 @@
-const selectForm = document.getElementById("select-form")
-
-
+const selectForm = document.getElementById("text-form")
+const inputText = document.getElementById("input-text")
+const taskListContainer = document.getElementById("tasklist-container");
+const inspiroBtn = document.getElementById("inspiro-btn")
+const inspiroContainer = document.getElementById("inspiro-container")
 
 document.getElementById("complimentButton").onclick = function () {
     axios.get("http://localhost:4000/api/compliment/")
@@ -37,3 +39,19 @@ document.getElementById("complimentButton").onclick = function () {
       }
     }
   }
+
+  selectForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+  
+    const newDisplayText = {
+      text: inputText.value
+    }
+  
+    axios.post("http://localhost:4000/api/display", newDisplayText)
+      .then(res => {
+        console.log((res.data));
+        displayTaskList(res.data);
+      });
+  
+    inputText.value = '';
+  })
