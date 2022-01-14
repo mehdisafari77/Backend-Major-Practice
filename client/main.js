@@ -1,6 +1,6 @@
 const selectForm = document.getElementById("text-form")
 const inputText = document.getElementById("input-text")
-const taskListContainer = document.getElementById("tasklist-container");
+const joyContainer = document.getElementById("joy-container");
 const inspiroBtn = document.getElementById("inspiro-btn")
 const inspiroContainer = document.getElementById("inspiro-container")
 
@@ -22,8 +22,8 @@ document.getElementById("fortuneButton").onclick = function () {
     
 
 function displayTaskList(arr){
-  while(taskListContainer.firstChild){
-    taskListContainer.removeChild(taskListContainer.firstChild)
+  while(joyContainer.firstChild){
+    joyContainer.removeChild(joyContainer.firstChild)
   }
   
   for (let i = 0; i < arr.length; i++){
@@ -31,7 +31,7 @@ function displayTaskList(arr){
     
     newTask.innerHTML = `<p>${arr[i].text}</p><button class="delete-btn" value ="${arr[i].id}">Delete</button>`
     
-    taskListContainer.appendChild(newTask);
+    joyContainer.appendChild(newTask);
     
     let deleteBtns = document.getElementsByClassName('delete-btn');
     
