@@ -17,3 +17,23 @@ document.getElementById("complimentButton").onclick = function () {
         alert(data);
       });
   };
+
+  function displayTaskList(arr){
+    while(taskListContainer.firstChild){
+      taskListContainer.removeChild(taskListContainer.firstChild)
+    }
+    
+    for (let i = 0; i < arr.length; i++){
+      const newTask = document.createElement("div");
+      
+      newTask.innerHTML = `<p>${arr[i].text}</p><button class="delete-btn" value ="${arr[i].id}">Delete</button>`
+      
+      taskListContainer.appendChild(newTask);
+      
+      let deleteBtns = document.getElementsByClassName('delete-btn');
+      
+      for (let i = 0; i < deleteBtns.length; i++){
+        deleteBtns[i].addEventListener('click', deleteTask)
+      }
+    }
+  }
