@@ -8,6 +8,7 @@
     "start": "node server/index.js",
     "develop": "concurrently \"cd server && npm run watch\"",
     "install": "cd server && npm i",
+    "build": "cd client && npm start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
